@@ -23,13 +23,13 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(5, self.calculate_1.sum)
 
     def test_subtracts_numbers(self):
-        self.calculate_2.subtract_number(self.calculate_2.first_number, self.calculate_2.second_number)
+        self.calculate_2.subtract_numbers(self.calculate_2.first_number, self.calculate_2.second_number)
         self.assertEqual(5, self.calculate_2.sum)
 
     def test_multiplies_numbers(self):
-        self.calculate_3.multiply_number(self.calculate_3.first_number, self.calculate_3.second_number)
+        self.calculate_3.multiply_numbers(self.calculate_3.first_number, self.calculate_3.second_number)
         self.assertEqual(12, self.calculate_3.sum)
 
     def test_divides_numbers(self):
-        self.calculate_4.divide_number(self.calculate_4.first_number, self.calculate_4.second_number)
+        self.calculate_4.divide_numbers(self.calculate_4.first_number, self.calculate_4.second_number)
         self.assertEqual(4, self.calculate_4.sum)
